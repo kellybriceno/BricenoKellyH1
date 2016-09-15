@@ -1,8 +1,9 @@
 public class weapon extends item {
-  int damage;
+  public class armor extends weapon {
+    int damage;
   String name;
   int weight;
-  
+  }
   public int getDamage() {
     return int damage;
   }
@@ -31,4 +32,5 @@ public class weapon extends item {
   
   public examine() {
     System.out.println(name + weight);
+  }
   }
