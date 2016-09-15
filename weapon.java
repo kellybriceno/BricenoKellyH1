@@ -1,4 +1,4 @@
-public class weapon {
+public class weapon extends item {
   int damage;
   String name;
   int weight;
