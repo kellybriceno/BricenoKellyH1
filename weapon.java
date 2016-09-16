@@ -10,8 +10,9 @@ public class weapon extends item {
   }
   public void setDefense(int [] defense) {
     defense = new defense;
-  //returns the integer damage
   }
+  //returns the integer damage
+  
   public int getDamage() {
     return int damage;
   }
@@ -20,23 +21,12 @@ public class weapon extends item {
     this.setDamage = damage;
   }
   
-  public void setName(String[]name) {
-    this.setName = name;
-  }
-  
   public String getName();
   
   
-  public getWeight() {
-    return int weight;
-  }
-  
-  public void setWeight(Int[] weight) {
-    this.setWeight = weight;
-  }
+  public getWeight();
   
   
-  public examine() {
-    System.out.println(name + weight);
+  public examine() ;
   }
   }
