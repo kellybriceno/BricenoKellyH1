@@ -1,3 +1,5 @@
+import java.util.Random;
+
 //created public class item
 public class item {
  //created properties for class
