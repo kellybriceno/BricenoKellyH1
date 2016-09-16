@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class food extends item {
   // set properties
   int nutrition;
