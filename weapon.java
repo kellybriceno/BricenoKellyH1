@@ -6,27 +6,33 @@ public class weapon extends item {
   int defense;
   // returns the integer defense
   public int getDefense() {
-    return int defense;
+    return defense;
   }
   public void setDefense(int [] defense) {
-    defense = new defense;
+    defense = new defense();
   }
   //returns the integer damage
   
   public int getDamage() {
-    return int damage;
+    return damage;
   }
   
-  public void setDamage(int[] damage) {
+  public int setDamage(int[] damage) {
     this.setDamage = damage;
   }
   
   public String getName();
   
   
-  public getWeight();
+  public void runWeight()
+  { 
+    Test.getWeight();
+  }
   
   
-  public examine() ;
+  public void runExamine()
+  {
+    Test.examine() ;
+  }
   }
   }
