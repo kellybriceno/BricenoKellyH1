@@ -10,7 +10,7 @@ public class item {
   }
   //method sets string name
   public void setName(String [] name) {
-    this.name = name;
+    name = newname;
   }
   //method returns integer weight
   public int getWeight() {
@@ -18,7 +18,7 @@ public class item {
   }
   //method sets integer weight
   public void setWeight(int[] weight) {
-    this.weight = weight;
+   weight = newweight;
   }
   //method to print a description of object and name and weight
   public String examine() {
