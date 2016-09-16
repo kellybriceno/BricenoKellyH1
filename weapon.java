@@ -3,6 +3,14 @@ public class weapon extends item {
     int damage;
   String name;
   int weight;
+  int defense;
+  // returns the integer defense
+  public int getDefense() {
+    return int defense;
+  }
+  public void setDefense(int [] defense) {
+    defense = new defense;
+  //returns the integer damage
   }
   public int getDamage() {
     return int damage;
