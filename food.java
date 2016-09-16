@@ -6,16 +6,16 @@ public class food extends item {
   
 // getter method to get integer nutrition
   public int getNutrition() {
-    return int nutrition;
+    return nutrition;
 }
   //setter for integer nutrition
-  public void setNutrition() {
-    nutrition = new nutrition; 
+  public int setNutrition(int [] nutrition) {
+    nutrition = new nutrition(); 
   }
   
   //getter method to get integer quantity
   public int getQuantity() {
-    return int quantity;
+    return quantity;
   }
   
   //setter for integer quantity
@@ -23,9 +23,11 @@ public class food extends item {
     quantity = newQuantity; 
  
   } 
-  getWeight(); 
-  getName();
-  examine(); 
+  public void run(){
+  Test.getWeight(); 
+  Test.getName();
+  Test.examine(); 
+  }
 }
   
   
