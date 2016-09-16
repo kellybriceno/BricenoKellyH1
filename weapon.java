@@ -1,9 +1,19 @@
+import java.util.Random;
+
 public class weapon extends item {
   public class armor extends weapon {
     int damage;
   String name;
   int weight;
   int defense;
+  // constructor?
+   public int tester(int[] damage, int[] weight, int[] defense, String[]name) {
+    this.damage = damage;
+    this.name = name; 
+    this.weight = weight;
+    this.defense = defense; 
+  }
+  
   // returns the integer defense
   public int getDefense() {
     return defense;
