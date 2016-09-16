@@ -1,103 +1,98 @@
+import java.util.Random;
 public class test {
   public static void main (String [] args) {
     int[] nutrition = {7,10};
     int[] quantity = {40,41};
     int[] weight = {50,51};
-    String name = "kelly"
+    String name = "kelly";
       int[] damage = {6,7};
       int[] defense = {5,4};
-    Player dude = new Player(stats, location, spawnLocation, "Blahblah");
+    test = new test(nutrition, quantity, weight, "kelly", damage, defense);
     
-    // tests that Constructor initializes stats properly
-    System.out.print("Stats: ");
-    for (int i = 0; i < dude.getStats().length; i++) {
-       System.out.print(dude.getStats()[i] + " "); 
+    // tests that Constructor initializes properly
+    System.out.print("Damage; ");
+    for (int i = 0; i < go.getTester().length; i++) {
+       System.out.print(go.getTester()[i] + " "); 
     }
     System.out.println("");
     
     // tests that Constructor initializes location properly
-    System.out.print("Location: ");
-    for (int i = 0; i < dude.getLocation().length; i++) {
-       System.out.print(dude.getLocation()[i] + " "); 
+    System.out.print("Defense: ");
+    for (int i = 0; i < go.getDefense().length; i++) {
+       System.out.print(go.getDefense()[i] + " "); 
     }
     System.out.println("");
 
     // tests that Constructor initializes spawn location properly
-    System.out.print("Spawn Location: ");
-    for (int i = 0; i < dude.getSpawnLocation().length; i++) {
-       System.out.print(dude.getSpawnLocation()[i] + " "); 
+    System.out.print("Weight: ");
+    for (int i = 0; i < go.getWeight().length; i++) {
+       System.out.print(go.getWeight()[i] + " "); 
     }
     System.out.println("");
     
     // tests that Constructor initializes name properly
     System.out.print("name: ");
-    System.out.println(dude.getName()); 
+    System.out.println(go.getName()); 
 
     
     // movement test
     dude.moveUp(); // expect y axis to be 51
     System.out.println("Test moveUp()");
     // tests that Constructor initializes location properly
-    System.out.print("Location: ");
-    for (int i = 0; i < dude.getLocation().length; i++) {
-       System.out.print(dude.getLocation()[i] + " "); 
+    System.out.print("Quantity: ");
+    for (int i = 0; i < go.getQuantity().length; i++) {
+       System.out.print(go.getQuantity()[i] + " "); 
     }
     System.out.println("");
     
     dude.moveDown(); // expect y axis to be 41
     System.out.println("Test moveDown()");
     // tests that Constructor initializes location properly
-    System.out.print("Location: ");
-    for (int i = 0; i < dude.getLocation().length; i++) {
-       System.out.print(dude.getLocation()[i] + " "); 
+    System.out.print("Nutrition: ");
+    for (int i = 0; i < dude.getNutrition().length; i++) {
+       System.out.print(dude.getNutrition()[i] + " "); 
     }
     System.out.println("");
     
-    dude.moveLeft(); // expect x axis to be 30
-    System.out.println("Test moveLeft()");
-    // tests that Constructor initializes location properly
-    System.out.print("Location: ");
-    for (int i = 0; i < dude.getLocation().length; i++) {
-       System.out.print(dude.getLocation()[i] + " "); 
-    }
-    System.out.println("");
-   
-    dude.moveRight(); // expect x axis to be 40
-    System.out.println("Test moveRight()");
-    // tests that Constructor initializes location properly
-    System.out.print("Location: ");
-    for (int i = 0; i < dude.getLocation().length; i++) {
-       System.out.print(dude.getLocation()[i] + " "); 
-    }
-    System.out.println("");
     
     // testing setters
     System.out.println("testing Setters:");
-    int[] stats1 = {20, 21, 22, 23};
-    dude.setStats(stats1);
-    int[] location1 = {0, 1};
-    dude.setLocation(location1);
-    int[] spawnLocation1 = {99, 100};
-    dude.setSpawnLocation(spawnLocation1);
-    dude.setName("somethingDifferent");
-    // tests that setters set stats properly
-    System.out.print("Stats: ");
-    for (int i = 0; i < dude.getStats().length; i++) {
-       System.out.print(dude.getStats()[i] + " "); 
+    int[] defense1 = {5,4};
+    go.setDefense(defense1);
+    int[] damage1 = {6,7};
+    go.setDamage(damage1);
+    int[] quantity1 = {40,41};
+    go.setquantity(quantity1);
+    int [] nutrition1 = {7,10};
+    go.setNutrition(nutrition1);
+    int[] weight1 = {50,51};
+    go.setWeight(weight1);
+    go.setName("somethingDifferent");
+    // tests that setters set  properly
+    System.out.print("Nutrition: ");
+    for (int i = 0; i < go.getNutrition().length; i++) {
+       System.out.print(go.getNutrition()[i] + " "); 
     }
     System.out.println("");
     
-    // tests that Constructor initializes location properly
-    System.out.print("Location: ");
-    for (int i = 0; i < dude.getLocation().length; i++) {
-       System.out.print(dude.getLocation()[i] + " "); 
+    // tests that Constructor initializes weight properly
+    System.out.print("Weight;");
+    for (int i = 0; i < go.getWeight().length; i++) {
+       System.out.print(go.getWeight()[i] + " "); 
     }
     System.out.println("");
 
-    // tests that Constructor initializes spawn location properly
-    System.out.print("Spawn Location: ");
-    for (int i = 0; i < dude.getSpawnLocation().length; i++) {
-       System.out.print(dude.getSpawnLocation()[i] + " "); 
+    // tests that Constructor initializes defense properly
+    System.out.print("Defense: ");
+    for (int i = 0; i < go.getDefense().length; i++) {
+       System.out.print(go.getDefense()[i] + " "); 
+    }
+    System.out.println("");
+    
+   //test that constuctor intializes 
+       System.out.print("Damage: ");
+    for (int i = 0; i < go.getDamage().length; i++) {
+       System.out.print(go.getDamage()[i] + " "); 
     }
     System.out.println("");
     
