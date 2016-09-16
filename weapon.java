@@ -16,9 +16,7 @@ public class weapon extends item {
     this.setName = name;
   }
   
-  public getName() {
-    return String name;
-  }
+  public String getName();
   
   
   public getWeight() {
