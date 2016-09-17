@@ -10,9 +10,9 @@ public class food extends item {
   public int getNutrition() {
     return nutrition;
 }
-  //setter for integer nutrition
-  public int setNutrition(int [] nutrition) {
-    nutrition = new nutrition(); 
+  //setter method for integer nutrition 
+   public int setNutrition; {
+   this.nutrition = nutrition; 
   }
   
   //getter method to get integer quantity
@@ -26,9 +26,9 @@ public class food extends item {
  
   } 
   public void run(){
-  Test.getWeight(); 
-  Test.getName();
-  Test.examine(); 
+  getWeight(); 
+  getName();
+  examine(); 
   }
 }
   
