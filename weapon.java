@@ -7,7 +7,7 @@ public class weapon extends item {
   int weight;
   int defense;
   // constructor?
-   public int tester(int[] damage, int[] weight, int[] defense, String[]name) {
+   public int weapon(int[] damage, int[] weight, int[] defense, String[]name) {
     this.damage = damage;
     this.name = name; 
     this.weight = weight;
