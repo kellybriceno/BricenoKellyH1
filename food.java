@@ -25,11 +25,7 @@ public class food extends item {
     quantity = newQuantity; 
  
   } 
-  public void run(){
-  getWeight(); 
-  getName();
-  examine(); 
-  }
+  
 }
   
   
