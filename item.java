@@ -11,19 +11,19 @@ public class item {
     return name; 
   }
   //method sets string name
-  public String setName(String [] name) {
-    name = new name();
+  public String setName; {
+    this.name = name;
   }
   //method returns integer weight
   public int getWeight() {
     return weight;
   }
   //method sets integer weight
-  public int setWeight(int[] weight) {
-   weight = new weight();
+  public int setWeight; {
+   this.weight = weight;
   }
   //method to print a description of object and name and weight
-  public String examine() {
-    System.out.println("description of object" + name + weight); 
+  public String examine; {
+    System.out.print("description of object" + name + weight); 
   }
 }
