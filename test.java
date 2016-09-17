@@ -7,7 +7,8 @@ public class test {
     String name = "kelly";
       int[] damage = {6,7};
       int[] defense = {5,4};
-    test = new test(nutrition, quantity, weight, "kelly", damage, defense);
+     
+     weapon one  = new weapon(nutrition, quantity, weight, "kelly", damage, defense);
     
     // tests that Constructor initializes properly
     System.out.print("Damage; ");
@@ -68,7 +69,7 @@ public class test {
     int[] weight1 = {50,51};
     go.setWeight(weight1);
     go.setName("somethingDifferent");
-    // tests that setters set  properly
+    // tests that setters set nutrition  properly
     System.out.print("Nutrition: ");
     for (int i = 0; i < go.getNutrition().length; i++) {
        System.out.print(go.getNutrition()[i] + " "); 
@@ -89,7 +90,7 @@ public class test {
     }
     System.out.println("");
     
-   //test that constuctor intializes 
+   //test that constuctor intializes damage property 
        System.out.print("Damage: ");
     for (int i = 0; i < go.getDamage().length; i++) {
        System.out.print(go.getDamage()[i] + " "); 
