@@ -1,5 +1,5 @@
 import java.util.Random;
-public class test {
+public class test extends weapon {
   public static void main (String [] args) {
     int[] nutrition = {7,10};
     int[] quantity = {40,41};
@@ -7,33 +7,35 @@ public class test {
     String name = "kelly";
       int[] damage = {6,7};
       int[] defense = {5,4};
+    
      
-     weapon one  = new weapon(nutrition, quantity, weight, "kelly", damage, defense);
+  
+  
     
     // tests that Constructor initializes properly
     System.out.print("Damage; ");
-    for (int i = 0; i < go.getTester().length; i++) {
-       System.out.print(go.getTester()[i] + " "); 
+    for (int i = 0; i < getDamage().length; i++) {
+       System.out.print(getDamage()[i] + " "); 
     }
     System.out.println("");
     
     // tests that Constructor initializes location properly
     System.out.print("Defense: ");
-    for (int i = 0; i < go.getDefense().length; i++) {
-       System.out.print(go.getDefense()[i] + " "); 
+    for (int i = 0; i < getDefense().length; i++) {
+       System.out.print(getDefense()[i] + " "); 
     }
     System.out.println("");
 
     // tests that Constructor initializes spawn location properly
     System.out.print("Weight: ");
-    for (int i = 0; i < go.getWeight().length; i++) {
-       System.out.print(go.getWeight()[i] + " "); 
+    for (int i = 0; i < getWeight().length; i++) {
+       System.out.print(getWeight()[i] + " "); 
     }
     System.out.println("");
     
     // tests that Constructor initializes name properly
     System.out.print("name: ");
-    System.out.println(go.getName()); 
+    System.out.println(getName()); 
 
     
     // movement test
