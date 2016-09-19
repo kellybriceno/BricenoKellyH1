@@ -1,11 +1,15 @@
 import java.util.Random;
 
-public class food extends item {
+public class food  {
   // set properties
   int nutrition;
   int quantity;
   
-  
+  // constructor for food class
+  public food(int getNutrition, int getQuantity) {
+    nutrition = getNutrition;
+    quantity = getQuantity;
+}
 // getter method to get integer nutrition
   public int getNutrition() {
     return nutrition;
