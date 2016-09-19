@@ -8,7 +8,7 @@ public class test extends weapon {
     String name = "kelly";
       int damage = 7;
       int defense = 4;
-    
+    //checking outputs with print statements
        {  
         System.out.println("Name: " + name);
         System.out.println("Weight " + weight);  
