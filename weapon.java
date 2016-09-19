@@ -1,27 +1,28 @@
 import java.util.Random;
 
-public class weapon extends item {
-  public class armor extends weapon {
+public class weapon {
+  public class armor extends weapon{
     int damage;
-  String name;
-  int weight;
-  int defense;
-  // constructor for weapon class 
-   public int weapon(int[] damage, int[] weight, int[] defense, String[]name) {
-    this.damage = damage;
-    this.name = name; 
-    this.weight = weight;
-    this.defense = defense; 
-  }
+    String name;
+    int weight;
+    int defense;
+    
+ 
   
   // returns the integer defense
   public int getDefense() {
     return defense;
   }
   //setter for int defense
-  public void setDefense(int [] defense) {
-    defense = new defense();
-  }
+  public void setDefense(int df) {
+    if(df >0) {
+          defense = df;
+    } else {
+      System.out.println("Error! not defense!");
+      System.exit(0); } }
+          
+  
+  
   //returns the integer damage
   
   public int getDamage() {
@@ -37,21 +38,7 @@ public class weapon extends item {
           
   }
   
-  public void runName() {
-    getName(); 
-  }
-  
-  public void runWeight()
-  { 
-    getWeight();
-  }
+ 
   
   
-  public String runExamine()
-  {
-    System.out.print("description of object" + name + weight); 
-  }
-  }
-  
-  
-  
+}
