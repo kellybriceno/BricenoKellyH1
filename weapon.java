@@ -28,7 +28,7 @@ public class weapon {
   public int getDamage() {
     return damage;
   }
-  
+  //setter for damage property
   public void setDamage(int d) {
     if(d>0) {
           damage = d;
