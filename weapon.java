@@ -6,7 +6,7 @@ public class weapon extends item {
   String name;
   int weight;
   int defense;
-  // constructor?
+  // constructor for weapon class 
    public int weapon(int[] damage, int[] weight, int[] defense, String[]name) {
     this.damage = damage;
     this.name = name; 
@@ -18,6 +18,7 @@ public class weapon extends item {
   public int getDefense() {
     return defense;
   }
+  //setter for int defense
   public void setDefense(int [] defense) {
     defense = new defense();
   }
@@ -27,22 +28,30 @@ public class weapon extends item {
     return damage;
   }
   
-  public int setDamage(int[] damage) {
-    this.setDamage = damage;
+  public void setDamage(int d) {
+    if(d>0) {
+          damage = d;
+    } else {
+      System.out.println("Error! not damage!");
+      System.exit(0); } }
+          
   }
   
-  public String getName();
-  
+  public void runName() {
+    getName(); 
+  }
   
   public void runWeight()
   { 
-    Test.getWeight();
+    getWeight();
   }
   
   
-  public void runExamine()
+  public String runExamine()
   {
-    Test.examine() ;
+    System.out.print("description of object" + name + weight); 
   }
   }
-  }
+  
+  
+  
