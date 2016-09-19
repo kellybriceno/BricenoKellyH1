@@ -6,6 +6,12 @@ public class item {
   public String name;
   public int weight;
   
+  // constructor for class item
+  public item(String getName, int getWeight, String examine) {
+    name = getName;
+    weight = getWeight;
+    examine = examine;
+}
   //method returns string name
   public String getName() {
     return name; 
