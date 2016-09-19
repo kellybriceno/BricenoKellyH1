@@ -11,9 +11,13 @@ public class food extends item {
     return nutrition;
 }
   //setter method for integer nutrition 
-   public int setNutrition; {
-   this.nutrition = nutrition; 
-  }
+  
+   public void setNutrition(int n) {
+    if(n>0) {
+          nutrition = n;
+    } else {
+      System.out.println("Error! not nutrition!");
+      System.exit(0); } }
   
   //getter method to get integer quantity
   public int getQuantity() {
