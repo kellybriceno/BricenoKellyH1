@@ -3,8 +3,8 @@ import java.util.Random;
 //created public class item
 public class item {
  //created properties for class
-  String name;
-  int weight;
+  public String name;
+  public int weight;
   
   //method returns string name
   public String getName() {
@@ -12,7 +12,7 @@ public class item {
   }
   //method sets string name
   public String setName; {
-    this.name = name;
+    name = "Kelly";
   }
   //method returns integer weight
   public int getWeight() {
@@ -20,7 +20,7 @@ public class item {
   }
   //method sets integer weight
   public int setWeight; {
-   this.weight = weight;
+    int[] weight = {50,51};
   }
   //method to print a description of object and name and weight
   public String examine; {
